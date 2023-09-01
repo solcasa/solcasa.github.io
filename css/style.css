@@ -194,7 +194,7 @@
     border-bottom-right-radius: 130px;
 }
 
-.page01 .slogan {
+.page01 .slogan h2 {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 82px;
@@ -206,7 +206,7 @@
 
 .page01 .slogan .point {
     font-size: 150px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
