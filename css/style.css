@@ -192,6 +192,8 @@
     background: #000 no-repeat fixed center center/cover;
     width: calc(100% - 100px);
     border-bottom-right-radius: 130px;
+
+    position: relative;
 }
 
 .page01 .slogan h2 {
@@ -203,11 +205,42 @@
     text-align: right;
 }
 
-
 .page01 .slogan .point {
     font-size: 150px;
     font-weight: 600;
 }
+
+.page01 .contact_area {
+    height: 100px;
+    position: absolute;
+    right: 190px;
+    bottom: 0;
+    padding: 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page01 .contact_area span {
+    color: #fff;
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.page01 .yellow_box {
+    position: absolute;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+    top: 0;
+    left: 50px;
+    width: 0;
+    height: 100%;
+    z-index: 999;
+}
+
+
+
+
 
 
 
