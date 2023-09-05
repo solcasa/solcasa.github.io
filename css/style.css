@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid tomato-;
+    outline: 1px solid tomato;
 }
 
 
@@ -203,6 +203,18 @@
     font-weight: 100;
     line-height: 1.2;
     text-align: right;
+
+    position: relative;
+}
+
+.page01 .slogan h2::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    top: -250px;
+    right: 0;
 }
 
 .page01 .slogan .point {
@@ -210,37 +222,55 @@
     font-weight: 600;
 }
 
-.page01 .contact_area {
-    height: 100px;
+.page01 .copy_area {
+    color: #ccc;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    transform: rotate(-90deg);
+
     position: absolute;
-    right: 190px;
-    bottom: 0;
-    padding: 0 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.page01 .contact_area span {
-    color: #fff;
-    display: block;
-    text-align: right;
-    margin-top: 10px;
-    font-weight: 100;
-}
-
-.page01 .yellow_box {
-    position: absolute;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-
-    top: 0;
-    left: 50px;
-    width: 0;
-    height: 100%;
+    left: 28px;
+    bottom: 125px;
     z-index: 999;
 }
 
+.page01 .scr_btn {
+    position: absolute;
+    right: -80px;
+    bottom: 130px;
 
+    text-transform: uppercase;
 
+    font-family: 'Poppins', sans-serif;
+}
 
+.page01 .scr_btn span {
+    display: block;
+    transform: rotate(90deg);
+}
+
+.page01 .scr_btn strong {
+    display: inline-block;
+    width: 1px;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.page01 .scr_btn strong::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    animation: scr_bar 1s infinite;
+    background: #000;
+}
+
+@keyframes scr_bar {
+    to {
+        height: 100%;
+    }
+}
 
 
 
@@ -313,7 +343,7 @@
 .info_wrap .desc {
     line-height: 1.6;
     font-size: 18px;
-    word-break: break-all;
+    word-break: keep-all;
     text-align: justify;
     font-weight: 300;
     margin-top: 15px;
@@ -350,4 +380,31 @@
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+}
+
+
+.page04 .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    width: 1200px;
+    margin-right: 190px;
+}
+
+.page04 .training_work .main_img {
+    border: 5px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+    margin: 0 0 15px 0;
+}
+
+.page04 .training_work .txt_wrap {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.page04 .training_work .txt_wrap h3 {
+    font-family: 'Poppins', sans-serif;
 }
