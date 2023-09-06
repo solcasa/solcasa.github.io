@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid tomato-;
+    outline: 1px solid tomato;
 }
 
 
@@ -73,10 +73,8 @@
     position: fixed;
     top: 60px;
     right: 33px;
-
     width: 32px;
     height: 24px;
-
     cursor: pointer;
     z-index: 1000;
 }
@@ -138,14 +136,17 @@
     transform: translate(0, -50%) rotate(-45deg);
 }
 
+
+/* menu_btn_cover */
 .cover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 100px);
+    border-bottom-right-radius: 130px;
     height: 100vh;
-    background: #333;
-    z-index: 999;
+    background: #000;
+    z-index: 1000;
 
     display: none;
 }
@@ -160,14 +161,73 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    gap: 30px;
+    gap: 60px;
 }
 
-.cover>ul a {
+.cover>ul>li {
+    position: relative;
+}
+
+.cover>ul>li~li::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -35px;
+    transform: translate(50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #666;
+}
+
+.cover>ul>li a {
+    font-family: 'Poppins', sans-serif;
     display: block;
     line-height: 1.4;
     color: #fff;
-    font-size: 40px;
+    font-size: 70px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.cover>ul>li a::after {
+    left: 50%;
+    background: rgba(0, 0, 0, 0);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0,0,0,0)', endColorstr='rgba(255,255,255,0.2)', GradientType=1);
+}
+
+.cover>ul>li a::before {
+    right: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255,255,255,0.2)', endColorstr='rgba(0,0,0,0)', GradientType=1);
+}
+
+.cover>ul>li a::after,
+.cover>ul>li a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+
+    transition: all 0.4s ease-in 0s;
+}
+
+.cover>ul>li a:hover::after {
+    width: 50%;
+    left: 0;
+}
+
+.cover>ul>li a:hover::before {
+    right: 0;
+    width: 50%;
 }
 
 
@@ -403,4 +463,34 @@
 
 .page04 .training_work .txt_wrap h3 {
     font-family: 'Poppins', sans-serif;
+}
+
+
+.footer .resume_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer .resume_box .pf_img {
+    text-align: center;
+}
+
+.footer .resume_box .pf_img img {
+    height: 320px;
+}
+
+.footer .resume_box .info_wrap img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.footer .resume_box .pf_txt {
+    line-height: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer .resume_box .pf_txt h3 {
+    font-weight: 900;
 }
