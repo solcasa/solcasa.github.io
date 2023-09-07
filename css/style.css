@@ -47,7 +47,7 @@
 @media (max-width: 768px) {
     .header {
         position: fixed;
-        top: 60px;
+        top: 30px;
         left: 0;
         right: 0;
         z-index: 999;
@@ -114,11 +114,12 @@
 @media (max-width: 768px) {
     .f_link {
         position: fixed;
-        bottom: 60px;
-        left: 100px;
+        bottom: 30px;
+        left: 15px;
         z-index: 999;
 
         border: 1px solid #000;
+
     }
 
     .f_link ul {
@@ -127,8 +128,8 @@
 
     .f_link ul li {
         border-right: 1px solid #000;
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
     }
 
     .f_link ul li:last-of-type {
@@ -137,8 +138,8 @@
 
     .f_link ul li a {
         display: block;
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 10px;
+        line-height: 20px;
         text-align: center;
     }
 
@@ -225,10 +226,10 @@
 @media (max-width: 768px) {
     .menu_btn {
         position: fixed;
-        top: 100px;
+        top: 72px;
         right: 15px;
-        width: 32px;
-        height: 24px;
+        width: 25px;
+        height: 20px;
         cursor: pointer;
         z-index: 1000;
     }
@@ -392,8 +393,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: calc(100% - 65px);
-        border-bottom-right-radius: 130px;
+        width: calc(100% - 55px);
+        border-bottom-right-radius: 0;
         height: 100vh;
         background: #000;
         z-index: 1000;
@@ -407,7 +408,7 @@
 
     .cover>ul {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
@@ -477,16 +478,16 @@
 @media (max-width: 768px) {
     .pagination {
         position: fixed;
-        top: 50%;
-        left: 100px;
+        top: 26%;
+        left: 0;
         transform: translate(0, -50%);
         z-index: 999;
 
         font-family: 'Poppins', sans-serif;
-        font-size: 30px;
+        font-size: 15px;
         font-weight: 600;
         line-height: 1.2;
-        padding: 5px 10px;
+        padding: 5px 15px;
     }
 }
 
@@ -750,7 +751,7 @@
     .page01 {
         background: #000 no-repeat fixed center center/cover;
         width: 100%;
-        border-bottom-right-radius: 130px;
+        border-bottom-right-radius: 0;
 
         position: relative;
     }
@@ -758,7 +759,7 @@
     .page01 .slogan h2 {
         font-family: 'Poppins', sans-serif;
         color: #fff;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 100;
         line-height: 1.2;
         text-align: right;
@@ -772,12 +773,12 @@
         height: 1px;
         width: 50px;
         background: rgba(255, 255, 255, 0.5);
-        top: -50px;
+        top: -30px;
         right: 0;
     }
 
     .page01 .slogan .point {
-        font-size: 70px;
+        font-size: 52px;
         font-weight: 600;
     }
 
@@ -795,14 +796,7 @@
     }
 
     .page01 .scr_btn {
-        position: absolute;
-        right: -55px;
-        bottom: 120px;
-        font-size: 14px;
-        writing-mode: vertical-rl;
-        text-transform: uppercase;
-        font-family: 'Poppins', sans-serif;
-        color: #000;
+        display: none;
     }
 
     .page01 .scr_btn strong {
@@ -840,10 +834,10 @@
 
 
     .fpg_img {
-        width: 690px;
-        height: 356px;
+        width: 100%;
+        height: 190px;
         overflow: hidden;
-        border: 10px solid #fff;
+        border: 5px solid #fff;
         border-radius: 8px;
         box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
     }
@@ -854,7 +848,7 @@
     }
 
     .fpg_img:hover img {
-        transform: translate(0, calc(-100% + 336px));
+        transform: translate(0, 0);
     }
 
     .info_wrap {
@@ -863,12 +857,12 @@
 
     .info_wrap h2 {
         font-family: 'Poppins', sans-serif;
-        font-size: 42px;
+        font-size: 32px;
         font-weight: 700;
         line-height: 80px;
         text-align: right;
         position: relative;
-        margin: 0 0 40px 0;
+        margin: 0 0 0 0;
     }
 
     .info_wrap .kor_title {
@@ -880,29 +874,30 @@
         content: "";
         position: absolute;
         display: block;
-        width: 100px;
+        width: 50px;
         height: 2px;
         right: 0;
         bottom: 0;
-        transform: translate(0, 15px);
+        transform: translate(0, 0);
         background: #000;
     }
 
     .info_wrap .list>* {
         display: grid;
-        grid-template-columns: 120px 1fr;
-        margin: 0 0 15px 0;
-        line-height: 1.6;
+        grid-template-columns: 90px 1fr;
+        margin: 0 0 0 0;
+        line-height: 26px;
+        font-size: 13px;
     }
 
     .info_wrap .desc {
-        line-height: 1.2;
+        line-height: 1.4;
         font-size: 14px;
-        word-break: keep-all;
+        word-break: break-all;
         text-align: justify;
         font-weight: 300;
-        margin-top: 15px;
-        margin-bottom: 23px;
+        margin-top: 10px;
+        margin-bottom: 13px;
     }
 
     .info_wrap .list>li strong {
@@ -913,19 +908,19 @@
     }
 
     .info_wrap .list>li span {
-        margin: 0 0 0 10px;
-        line-height: 27px;
+        margin: 0 0 0 0;
+        line-height: 26px;
     }
 
     .web_btn {
         position: absolute;
-        bottom: 0;
+        bottom: -60px;
         right: 0;
     }
 
     .web_btn a {
         display: block;
-        width: 150px;
+        width: 120px;
         height: 40px;
         background: #fff;
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
@@ -935,28 +930,29 @@
         font-weight: 500;
         font-family: 'Poppins', sans-serif;
         text-align: center;
-    }
 
+        font-size: 14px;
+    }
 
     .page04 .content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        grid-template-columns: 1fr, 1fr;
+        gap: 10px;
 
-        width: 1200px;
-        margin-right: 190px;
+        width: 100%;
+        margin-right: 0;
     }
 
     .page04 .training_work .main_img {
         border: 5px solid #fff;
         border-radius: 8px;
         box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
-        margin: 0 0 15px 0;
+        margin: 0 0 5px 0;
     }
 
     .page04 .training_work .txt_wrap {
         text-align: center;
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 400;
     }
 
@@ -967,31 +963,33 @@
 
     .footer .resume_box {
         display: grid;
-        grid-template-columns: 350px 350px 470px;
-        gap: 40px;
+        grid-template-columns: 1fr;
+        gap: 0;
 
-        width: 1200px;
-        margin-left: 190px;
+        width: 100%;
+        margin-left: 0;
     }
 
     .footer .resume_box .pf_img {
-        text-align: center;
+        text-align: right;
     }
 
     .footer .resume_box .pf_img img {
-        height: 320px;
+        height: 150px;
+        border-radius: 50%;
     }
 
     .footer .resume_box .info_wrap img {
-        width: 100px;
+        width: 20%;
         margin-top: 10px;
     }
 
     .footer .resume_box .pf_txt {
-        line-height: 27px;
+        line-height: 26px;
+        font-size: 13px;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 6px;
     }
 
     .footer .resume_box .pf_txt h3 {
