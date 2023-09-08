@@ -967,8 +967,8 @@
     }
 
     .page04 .training_work .main_img {
-        border: 5px solid #fff;
-        border-radius: 8px;
+        border: none;
+        border-radius: 0;
         box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
         margin: 0 0 5px 0;
     }
