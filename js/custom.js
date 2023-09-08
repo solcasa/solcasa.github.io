@@ -22,10 +22,12 @@ new fullpage('#main', {
     anchors: ['p01', 'p02', 'p03', 'p04', 'footer'],
     css3: false,
     scrollOverflow: false,
-
+    responsiveWidth: 768,
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     controlArrows: false,
     loopHorizontal: false,
+
+
 
     afterLoad: function (origin, destination, direction, trigger) {
         console.log(destination.index, ASIDE[destination.index]);
