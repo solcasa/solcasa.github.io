@@ -975,12 +975,12 @@
 
     .page04 .training_work .txt_wrap {
         text-align: center;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
     }
 
-    .page04 .training_work .txt_wrap h3 {
-        font-family: 'Poppins', sans-serif;
+    .page04 .training_work .txt_wrap h3 b {
+        font-weight: 700;
     }
 
 
