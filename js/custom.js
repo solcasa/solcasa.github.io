@@ -22,6 +22,7 @@ new fullpage('#main', {
     anchors: ['p01', 'p02', 'p03', 'p04', 'footer'],
     css3: false,
     scrollOverflow: false,
+    slidesNavigation: true,
 
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     controlArrows: false,

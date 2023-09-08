@@ -575,7 +575,6 @@
 }
 
 
-
 .page02,
 .page03,
 .page04,
@@ -684,6 +683,28 @@
     text-align: center;
 }
 
+#main .fp-slidesNav {
+    position: absolute;
+    bottom: 200px;
+    left: 50% !important;
+    right: auto;
+    transform: translate(-50%, 0);
+
+    z-index: 9999999;
+}
+
+@media (max-width: 768px) {
+    #main .fp-slidesNav {
+        position: absolute;
+        bottom: 100px;
+        left: 50% !important;
+        right: auto;
+        transform: translate(-50%, 0);
+
+        z-index: 9999999;
+    }
+
+}
 
 .page04 .content {
     display: grid;
@@ -977,7 +998,7 @@
     }
 
     .footer .resume_box .pf_img img {
-        height: 150px;
+        height: 200px;
         border-radius: 50%;
     }
 
