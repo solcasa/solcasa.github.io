@@ -62,7 +62,7 @@
 
     .header h1 {
         font-family: 'Poppins', sans-serif;
-        font-size: 30px;
+        font-size: 22px;
         font-weight: 600;
         line-height: 1.2;
     }
@@ -226,10 +226,10 @@
 @media (max-width: 768px) {
     .menu_btn {
         position: fixed;
-        top: 72px;
+        top: 60px;
         right: 15px;
-        width: 25px;
-        height: 20px;
+        width: 22px;
+        height: 18px;
         cursor: pointer;
         z-index: 1000;
     }
@@ -248,7 +248,7 @@
         content: "";
         position: absolute;
         inset: 0 0 auto 0;
-        height: 4px;
+        height: 2px;
         background: #000;
     }
 
@@ -256,7 +256,7 @@
         content: "";
         position: absolute;
         inset: auto 0 0 0;
-        height: 4px;
+        height: 2px;
         background: #000;
     }
 
@@ -269,7 +269,7 @@
         content: "";
         position: absolute;
         inset: 50% 0 auto 0;
-        height: 4px;
+        height: 2px;
         background: #000;
         transform: translate(0, -50%);
     }
@@ -282,7 +282,7 @@
         content: "";
         position: absolute;
         inset: 50% 0 auto 0;
-        height: 4px;
+        height: 2px;
         background: #000;
         transform: translate(0, -50%);
     }
@@ -393,7 +393,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: calc(100% - 55px);
+        width: calc(100% - 70px);
         border-bottom-right-radius: 0;
         height: 100vh;
         background: #000;
@@ -835,7 +835,7 @@
 
     .fpg_img {
         width: 100%;
-        height: 190px;
+        height: 170px;
         overflow: hidden;
         border: 5px solid #fff;
         border-radius: 8px;
@@ -857,9 +857,9 @@
 
     .info_wrap h2 {
         font-family: 'Poppins', sans-serif;
-        font-size: 32px;
+        font-size: 22px;
         font-weight: 700;
-        line-height: 80px;
+        line-height: 60px;
         text-align: right;
         position: relative;
         margin: 0 0 0 0;
@@ -916,6 +916,8 @@
         position: absolute;
         bottom: -60px;
         right: 0;
+
+        display: none;
     }
 
     .web_btn a {
@@ -990,6 +992,8 @@
         display: flex;
         flex-direction: column;
         gap: 6px;
+
+        display: none;
     }
 
     .footer .resume_box .pf_txt h3 {

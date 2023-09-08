@@ -22,8 +22,6 @@ new fullpage('#main', {
     anchors: ['p01', 'p02', 'p03', 'p04', 'footer'],
     css3: false,
     scrollOverflow: false,
-    responsiveWidth: 768,
-    responsiveSlides: false,
 
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     controlArrows: false,
@@ -97,24 +95,19 @@ COVER.addEventListener('wheel', e => {
 // slide wheel event
 SLIDE.addEventListener('wheel', (e) => {
     console.log(e, e.deltaY); // e.deltaY 100, -100
-    if (window.innerWidth > 768) {
-        if (e.deltaY > 0) {
-            fullpage_api.moveSlideRight();
-        } else {
-            fullpage_api.moveSlideLeft();
-        }
+    if (e.deltaY > 0) {
+        fullpage_api.moveSlideRight();
+    } else {
+        fullpage_api.moveSlideLeft();
     }
 });
 
 SLIDE_02.addEventListener('wheel', (e) => {
-    if (window.innerWidth > 768) {
-        if (e.deltaY > 0) {
-            fullpage_api.moveSlideRight();
-        } else {
-            fullpage_api.moveSlideLeft();
-        }
+    if (e.deltaY > 0) {
+        fullpage_api.moveSlideRight();
+    } else {
+        fullpage_api.moveSlideLeft();
     }
-
 });
 
 
