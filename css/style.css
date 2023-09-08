@@ -696,7 +696,7 @@
 @media (max-width: 768px) {
     #main .fp-slidesNav {
         position: absolute;
-        bottom: 100px;
+        bottom: 80px;
         left: 50% !important;
         right: auto;
         transform: translate(-50%, 0);
